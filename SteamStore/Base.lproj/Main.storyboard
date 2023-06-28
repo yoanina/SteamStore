@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,40 +16,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="steamlogo" translatesAutoresizingMaskIntoConstraints="NO" id="K8P-8g-qvx">
-                                <rect key="frame" x="96" y="98" width="202" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steamlogo" translatesAutoresizingMaskIntoConstraints="NO" id="K8P-8g-qvx">
+                                <rect key="frame" x="121.66666666666669" y="109" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="A8b-AT-1eA"/>
+                                    <constraint firstAttribute="height" constant="150" id="Afe-Sg-Edu"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Usuario:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxa-cb-x5C">
-                                <rect key="frame" x="163" y="330" width="64" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxa-cb-x5C">
+                                <rect key="frame" x="164.66666666666666" y="328" width="64" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DIH-4o-Tdu">
-                                <rect key="frame" x="50" y="373" width="290" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DIH-4o-Tdu">
+                                <rect key="frame" x="71.666666666666686" y="371" width="250" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="xqD-V5-v8G"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contrase;a:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9u-Ho-Kmk">
-                                <rect key="frame" x="152" y="477" width="88" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9u-Ho-Kmk">
+                                <rect key="frame" x="150" y="445" width="93" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RBQ-1s-cAa">
-                                <rect key="frame" x="50" y="517" width="290" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RBQ-1s-cAa">
+                                <rect key="frame" x="71.666666666666686" y="488" width="250" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLM-Jd-Pli">
-                                <rect key="frame" x="96" y="595" width="202" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLM-Jd-Pli">
+                                <rect key="frame" x="96.666666666666686" y="592" width="200" height="35"/>
                                 <color key="backgroundColor" red="0.11985841310000001" green="0.13006633910000001" blue="0.24694207700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4Jj-4n-G5F"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Ingresar" cornerStyle="dynamic"/>
@@ -57,22 +61,27 @@
                                     <action selector="iniciarSesionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GZL-gl-Klb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SteamStore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyI-5V-oil">
-                                <rect key="frame" x="139" y="211" width="112" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SteamStore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyI-5V-oil">
+                                <rect key="frame" x="140.66666666666666" y="264" width="112" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5Z-iv-ows">
-                                <rect key="frame" x="107" y="671" width="178" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5Z-iv-ows">
+                                <rect key="frame" x="96.666666666666686" y="657" width="200" height="35"/>
+                                <color key="backgroundColor" red="0.1165892109" green="0.13013684750000001" blue="0.25464579459999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="n2T-Tj-ThB"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Ingresar con Google"/>
+                                <connections>
+                                    <action selector="iniciarSesionGoogleTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v9p-fj-K1F"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJK-li-nrY">
-                                <rect key="frame" x="54" y="725" width="286" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJK-li-nrY">
+                                <rect key="frame" x="53.666666666666657" y="722" width="286" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="No tienes una cuenta? Create una!"/>
                                 <connections>
@@ -82,6 +91,27 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.45432213177040776" green="0.4378659860051306" blue="0.5" alpha="0.62318915562913912" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vyI-5V-oil" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4tq-px-mxm"/>
+                            <constraint firstItem="K8P-8g-qvx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="8uS-Ei-t49"/>
+                            <constraint firstItem="RBQ-1s-cAa" firstAttribute="top" secondItem="c9u-Ho-Kmk" secondAttribute="bottom" constant="22" id="DRc-zs-YNS"/>
+                            <constraint firstItem="RBQ-1s-cAa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="EQH-aP-oV2"/>
+                            <constraint firstItem="c9u-Ho-Kmk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="J9M-uc-ier"/>
+                            <constraint firstItem="cLM-Jd-Pli" firstAttribute="top" secondItem="RBQ-1s-cAa" secondAttribute="bottom" constant="70" id="QBx-8d-SLo"/>
+                            <constraint firstItem="K8P-8g-qvx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SEJ-nD-XfA"/>
+                            <constraint firstItem="DIH-4o-Tdu" firstAttribute="top" secondItem="Mxa-cb-x5C" secondAttribute="bottom" constant="22" id="Yt0-4r-kpc"/>
+                            <constraint firstItem="bJK-li-nrY" firstAttribute="top" secondItem="Z5Z-iv-ows" secondAttribute="bottom" constant="30" id="bZy-K9-gcd"/>
+                            <constraint firstItem="Mxa-cb-x5C" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bkS-bN-LFm"/>
+                            <constraint firstItem="cLM-Jd-Pli" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dQq-ui-36V"/>
+                            <constraint firstItem="RBQ-1s-cAa" firstAttribute="width" secondItem="DIH-4o-Tdu" secondAttribute="width" id="gse-FK-xdm"/>
+                            <constraint firstItem="Z5Z-iv-ows" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jzi-Ru-zct"/>
+                            <constraint firstItem="c9u-Ho-Kmk" firstAttribute="top" secondItem="DIH-4o-Tdu" secondAttribute="bottom" constant="40" id="kdN-3w-jVg"/>
+                            <constraint firstItem="vyI-5V-oil" firstAttribute="top" secondItem="K8P-8g-qvx" secondAttribute="bottom" constant="5" id="khK-Pd-sUA"/>
+                            <constraint firstItem="Mxa-cb-x5C" firstAttribute="top" secondItem="vyI-5V-oil" secondAttribute="bottom" constant="40" id="r6V-xF-VOI"/>
+                            <constraint firstItem="Z5Z-iv-ows" firstAttribute="top" secondItem="cLM-Jd-Pli" secondAttribute="bottom" constant="30" id="rNW-Ye-bhp"/>
+                            <constraint firstItem="bJK-li-nrY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="slP-tp-FIL"/>
+                            <constraint firstItem="DIH-4o-Tdu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xmb-CP-wGG"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="DIH-4o-Tdu" id="Ht6-st-pBQ"/>
@@ -98,7 +128,7 @@
             <objects>
                 <viewController id="vSR-Yv-M31" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PRe-Sx-urw">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="f82-me-GK7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
