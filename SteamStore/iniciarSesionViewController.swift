@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 import FirebaseCore
 import FirebaseAuth
+import GoogleSignIn
 
 class iniciarSesionViewController: UIViewController {
 
@@ -39,6 +42,27 @@ class iniciarSesionViewController: UIViewController {
                 self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
             }
         }
+    }
+    
+    func loginGoogle() {
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+        
+        let config = GIDConfiguration(clientID: clientID)
+        GIDSignIn.sharedInstance.configuration = config
+        
+        GIDSignIn.sharedInstance.signIn(withPresenting: self) { [unowned self] result, error in guard error == nil else { return }
+            guard let user = result?.user, let idToken = user.idToken?.tokenString
+            else { return }
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: user.accessToken.tokenString)
+            Auth.auth().signIn(with: credential) {result, error in print("Se ha iniciado sesión con Google: \(String(describing: result))")
+                self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
+            }
+        }
+        
+    }
+    
+    @IBAction func iniciarSesionGoogleTapped(_ sender: Any) {
+        loginGoogle()
     }
     
     
