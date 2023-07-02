@@ -2,10 +2,9 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -87,6 +86,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="No tienes una cuenta? Create una!"/>
                                 <connections>
                                     <action selector="crearNuevaCuentaTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N7I-Fv-JGa"/>
+                                    <segue destination="Wf5-4C-tM5" kind="show" id="vRu-Re-VsM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -124,23 +124,154 @@
             </objects>
             <point key="canvasLocation" x="6.8702290076335872" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Registrar Usuario View Controller-->
+        <scene sceneID="tLC-3H-ysj">
+            <objects>
+                <viewController id="Wf5-4C-tM5" customClass="RegistrarUsuarioViewController" customModule="SteamStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nMf-Ib-kjS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ODr-5D-t86"/>
+                        <color key="backgroundColor" red="0.28653913739999998" green="0.26964205499999999" blue="0.31519228220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CK3-eh-Gpf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vce-h9-TdL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="730"/>
+        </scene>
+        <!--Carrito View Controller-->
+        <scene sceneID="uXC-ik-F7t">
+            <objects>
+                <viewController id="PXE-On-UAe" customClass="CarritoViewController" customModule="SteamStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jbm-MX-Kuh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4FQ-uX-k0Q"/>
+                        <color key="backgroundColor" red="0.28653913739999998" green="0.26964205499999999" blue="0.31519228220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IHW-Yk-tBZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Dv-yE-f9H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2552" y="-709"/>
+        </scene>
+        <!--Lista Juegos View Controller-->
         <scene sceneID="mav-4J-F7m">
             <objects>
-                <viewController id="vSR-Yv-M31" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="vSR-Yv-M31" customClass="ListaJuegosViewController" customModule="SteamStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PRe-Sx-urw">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="393-QU-6Pl">
+                                <rect key="frame" x="0.0" y="56" width="393" height="727"/>
+                                <color key="backgroundColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iFA-bN-GSe">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GridCollectionViewCell" id="GAo-FV-5Bh" customClass="GridCollectionViewCell" customModule="SteamStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uq1-Q0-bCl">
+                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F76-tN-NWL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="99"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEJ-bO-51h">
+                                                    <rect key="frame" x="43" y="103" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="F76-tN-NWL" firstAttribute="top" secondItem="uq1-Q0-bCl" secondAttribute="top" id="EA7-0U-QAU"/>
+                                                <constraint firstItem="F76-tN-NWL" firstAttribute="leading" secondItem="uq1-Q0-bCl" secondAttribute="leading" id="GVN-Qi-RHx"/>
+                                                <constraint firstItem="yEJ-bO-51h" firstAttribute="top" secondItem="F76-tN-NWL" secondAttribute="bottom" constant="4" id="bUf-vg-pCn"/>
+                                                <constraint firstItem="yEJ-bO-51h" firstAttribute="centerX" secondItem="uq1-Q0-bCl" secondAttribute="centerX" id="cJY-TV-pkF"/>
+                                                <constraint firstAttribute="trailing" secondItem="F76-tN-NWL" secondAttribute="trailing" id="sUF-aG-RvG"/>
+                                                <constraint firstAttribute="bottom" secondItem="yEJ-bO-51h" secondAttribute="bottom" constant="4" id="w1P-61-ibj"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="F76-tN-NWL" id="p5Q-l2-B7Y"/>
+                                            <outlet property="nombreTxt" destination="yEJ-bO-51h" id="U9p-ID-OSS"/>
+                                            <segue destination="rr2-WQ-QCo" kind="show" identifier="detalleJuegoSegue" id="p4x-lY-S0x"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="f82-me-GK7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.28653913739999998" green="0.26964205499999999" blue="0.31519228220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="393-QU-6Pl" firstAttribute="leading" secondItem="f82-me-GK7" secondAttribute="leading" id="8TK-70-LmE"/>
+                            <constraint firstItem="f82-me-GK7" firstAttribute="trailing" secondItem="393-QU-6Pl" secondAttribute="trailing" id="Kq2-bJ-w3G"/>
+                            <constraint firstItem="f82-me-GK7" firstAttribute="bottom" secondItem="393-QU-6Pl" secondAttribute="bottom" id="cf7-gK-Djv"/>
+                            <constraint firstItem="393-QU-6Pl" firstAttribute="top" secondItem="f82-me-GK7" secondAttribute="top" id="xoM-qC-SOf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fIk-Tm-upx">
                         <barButtonItem key="leftBarButtonItem" title="Cerrar Sesion" id="6ZC-3T-T14"/>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="q23-AL-FBp">
+                                <connections>
+                                    <segue destination="DNi-10-9Tp" kind="show" id="NOW-Um-pkh"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="cart" catalog="system" id="Xdh-3G-5Ij">
+                                <connections>
+                                    <segue destination="PXE-On-UAe" kind="show" id="uue-2x-u5n"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="grid" destination="393-QU-6Pl" id="HVK-Uv-GbC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M2T-Z0-EiI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1637" y="-2"/>
+            <point key="canvasLocation" x="1635.8778625954199" y="-2.1126760563380285"/>
+        </scene>
+        <!--Detalle Juego View Controller-->
+        <scene sceneID="bOV-Pe-B1m">
+            <objects>
+                <viewController id="rr2-WQ-QCo" customClass="DetalleJuegoViewController" customModule="SteamStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FL3-Dc-Xw5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="R7Z-lf-Fkw"/>
+                        <color key="backgroundColor" red="0.28653913739999998" green="0.26964205499999999" blue="0.31519228220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wCi-3j-olk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4cp-zT-2iy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2553" y="0.0"/>
+        </scene>
+        <!--Nuevo Juego Viewcontroller-->
+        <scene sceneID="uwS-89-csn">
+            <objects>
+                <viewController id="DNi-10-9Tp" customClass="NuevoJuegoViewcontroller" customModule="SteamStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cOn-SR-kC9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uye-Hj-C2f"/>
+                        <color key="backgroundColor" red="0.28653913739999998" green="0.26964205499999999" blue="0.31519228220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aV7-yh-pNM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wz-ml-7PG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2552" y="730"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PEq-0d-92L">
@@ -162,9 +293,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cart" catalog="system" width="128" height="102"/>
         <image name="steamlogo" width="894" height="894"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
