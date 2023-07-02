@@ -223,12 +223,12 @@
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="q23-AL-FBp">
                                 <connections>
-                                    <segue destination="DNi-10-9Tp" kind="show" id="NOW-Um-pkh"/>
+                                    <segue destination="DNi-10-9Tp" kind="show" identifier="añadirJuegoSegue" id="NOW-Um-pkh"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Item" image="cart" catalog="system" id="Xdh-3G-5Ij">
                                 <connections>
-                                    <segue destination="PXE-On-UAe" kind="show" id="uue-2x-u5n"/>
+                                    <segue destination="PXE-On-UAe" kind="show" identifier="carritoSegue" id="uue-2x-u5n"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
