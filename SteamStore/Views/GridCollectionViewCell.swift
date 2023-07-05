@@ -6,9 +6,15 @@
 //
 
 import UIKit
+import SDWebImage
 
 class GridCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var nombreTxt: UILabel!
-    @IBOutlet weak var imageView: UIView!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    func setup (with valor: Juego){
+        imageView.sd_setImage(with: URL(string: valor.imagenURL), completed: nil)
+        nombreTxt.text = valor.nombre
+    }
 }

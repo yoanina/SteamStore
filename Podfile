@@ -11,7 +11,7 @@ target 'SteamStore' do
   pod 'GoogleSignIn', '7.0.0'
   pod 'FirebaseStorage'
   pod 'FirebaseDatabase'
-  pod 'SDWebImage'
+  pod 'SDWebImage', '5.8.4'
   # pod para el funcionamiento de GoogleSignIn
   pod 'Firebase'
 end

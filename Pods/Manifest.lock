@@ -115,9 +115,9 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (2.2.0)
-  - SDWebImage (5.16.0):
-    - SDWebImage/Core (= 5.16.0)
-  - SDWebImage/Core (5.16.0)
+  - SDWebImage (5.8.4):
+    - SDWebImage/Core (= 5.8.4)
+  - SDWebImage/Core (5.8.4)
 
 DEPENDENCIES:
   - Firebase
@@ -126,7 +126,7 @@ DEPENDENCIES:
   - FirebaseDatabase
   - FirebaseStorage
   - GoogleSignIn (= 7.0.0)
-  - SDWebImage
+  - SDWebImage (= 5.8.4)
 
 SPEC REPOS:
   trunk:
@@ -169,8 +169,8 @@ SPEC CHECKSUMS:
   leveldb-library: f03246171cce0484482ec291f88b6d563699ee06
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
-  SDWebImage: 2aea163b50bfcb569a2726b6a754c54a4506fcf6
+  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
 
-PODFILE CHECKSUM: 9fdfe4a87f9b0561f25235eab2a7319800bb5bc2
+PODFILE CHECKSUM: f3f9bfd55f09eebb914a09136bf63b2cfe9bf3ae
 
 COCOAPODS: 1.12.1

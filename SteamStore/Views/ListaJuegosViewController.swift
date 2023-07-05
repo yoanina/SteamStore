@@ -10,6 +10,7 @@ import UIKit
 class ListaJuegosViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var grid: UICollectionView!
+    var valores:[Juego] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +26,13 @@ class ListaJuegosViewController: UIViewController, UICollectionViewDataSource, U
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        return valores.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        let cell =
+        grid.dequeueReusableCell(withReuseIdentifier: "GridCollectionViewCell", for: indexPath) as! GridCollectionViewCell
+        cell.setup(with: valores[indexPath.row])
+        return cell
     }
 }
