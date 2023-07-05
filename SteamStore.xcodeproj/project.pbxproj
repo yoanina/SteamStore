@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		529825B42A51D9420079F29C /* Juego.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529825B32A51D9420079F29C /* Juego.swift */; };
+		529825B82A51DDE20079F29C /* ListaJuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529825B72A51DDE20079F29C /* ListaJuegosViewController.swift */; };
+		529825BA2A51DDFA0079F29C /* NuevoJuegoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529825B92A51DDFA0079F29C /* NuevoJuegoViewController.swift */; };
+		529825BC2A51DE1D0079F29C /* DetalleJuegoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529825BB2A51DE1D0079F29C /* DetalleJuegoViewController.swift */; };
+		529825BE2A51E0040079F29C /* RegistrarUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529825BD2A51E0040079F29C /* RegistrarUsuarioViewController.swift */; };
+		529825E42A51E19F0079F29C /* SteamStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 529825E22A51E19F0079F29C /* SteamStore.xcdatamodeld */; };
+		529825E62A51E2AD0079F29C /* CarritoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529825E52A51E2AD0079F29C /* CarritoViewController.swift */; };
+		529825E82A51E40E0079F29C /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529825E72A51E40E0079F29C /* GridCollectionViewCell.swift */; };
 		6468F30D1972D1644AF6CC9C /* Pods_SteamStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB851B8A110C6B6C31F82296 /* Pods_SteamStore.framework */; };
 		C98593CE2A4B685100B057D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98593CD2A4B685100B057D5 /* AppDelegate.swift */; };
 		C98593D02A4B685100B057D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98593CF2A4B685100B057D5 /* SceneDelegate.swift */; };
@@ -19,6 +27,14 @@
 
 /* Begin PBXFileReference section */
 		0E88E3B984998086835FFE7D /* Pods-SteamStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteamStore.debug.xcconfig"; path = "Target Support Files/Pods-SteamStore/Pods-SteamStore.debug.xcconfig"; sourceTree = "<group>"; };
+		529825B32A51D9420079F29C /* Juego.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juego.swift; sourceTree = "<group>"; };
+		529825B72A51DDE20079F29C /* ListaJuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaJuegosViewController.swift; sourceTree = "<group>"; };
+		529825B92A51DDFA0079F29C /* NuevoJuegoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoJuegoViewController.swift; sourceTree = "<group>"; };
+		529825BB2A51DE1D0079F29C /* DetalleJuegoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleJuegoViewController.swift; sourceTree = "<group>"; };
+		529825BD2A51E0040079F29C /* RegistrarUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarUsuarioViewController.swift; sourceTree = "<group>"; };
+		529825E32A51E19F0079F29C /* SteamStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SteamStore.xcdatamodel; sourceTree = "<group>"; };
+		529825E52A51E2AD0079F29C /* CarritoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoViewController.swift; sourceTree = "<group>"; };
+		529825E72A51E40E0079F29C /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
 		BB2C7075B73697E36C78912C /* Pods-SteamStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteamStore.release.xcconfig"; path = "Target Support Files/Pods-SteamStore/Pods-SteamStore.release.xcconfig"; sourceTree = "<group>"; };
 		BB851B8A110C6B6C31F82296 /* Pods_SteamStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteamStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98593CA2A4B685100B057D5 /* SteamStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteamStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +61,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		529825B52A51D9870079F29C /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				529825B32A51D9420079F29C /* Juego.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
+		529825B62A51D9990079F29C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				529825B72A51DDE20079F29C /* ListaJuegosViewController.swift */,
+				529825B92A51DDFA0079F29C /* NuevoJuegoViewController.swift */,
+				529825BB2A51DE1D0079F29C /* DetalleJuegoViewController.swift */,
+				529825E52A51E2AD0079F29C /* CarritoViewController.swift */,
+				529825E72A51E40E0079F29C /* GridCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		76D4E3DFCB8ADB3E111D76ED /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,15 +119,19 @@
 		C98593CC2A4B685100B057D5 /* SteamStore */ = {
 			isa = PBXGroup;
 			children = (
+				529825B62A51D9990079F29C /* Views */,
 				C9D2FB702A4C8CB400A63621 /* SteamStore.entitlements */,
 				C9D2FB6E2A4C775300A63621 /* GoogleService-Info.plist */,
 				C98593CD2A4B685100B057D5 /* AppDelegate.swift */,
 				C98593CF2A4B685100B057D5 /* SceneDelegate.swift */,
 				C98593D12A4B685100B057D5 /* iniciarSesionViewController.swift */,
 				C98593D32A4B685100B057D5 /* Main.storyboard */,
+				529825BD2A51E0040079F29C /* RegistrarUsuarioViewController.swift */,
 				C98593D62A4B685200B057D5 /* Assets.xcassets */,
 				C98593D82A4B685200B057D5 /* LaunchScreen.storyboard */,
 				C98593DB2A4B685200B057D5 /* Info.plist */,
+				529825B52A51D9870079F29C /* Modelos */,
+				529825E22A51E19F0079F29C /* SteamStore.xcdatamodeld */,
 			);
 			path = SteamStore;
 			sourceTree = "<group>";
@@ -212,8 +252,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529825B82A51DDE20079F29C /* ListaJuegosViewController.swift in Sources */,
+				529825E62A51E2AD0079F29C /* CarritoViewController.swift in Sources */,
+				529825BE2A51E0040079F29C /* RegistrarUsuarioViewController.swift in Sources */,
+				529825B42A51D9420079F29C /* Juego.swift in Sources */,
+				529825E42A51E19F0079F29C /* SteamStore.xcdatamodeld in Sources */,
+				529825E82A51E40E0079F29C /* GridCollectionViewCell.swift in Sources */,
 				C98593D22A4B685100B057D5 /* iniciarSesionViewController.swift in Sources */,
+				529825BC2A51DE1D0079F29C /* DetalleJuegoViewController.swift in Sources */,
 				C98593CE2A4B685100B057D5 /* AppDelegate.swift in Sources */,
+				529825BA2A51DDFA0079F29C /* NuevoJuegoViewController.swift in Sources */,
 				C98593D02A4B685100B057D5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +486,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		529825E22A51E19F0079F29C /* SteamStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				529825E32A51E19F0079F29C /* SteamStore.xcdatamodel */,
+			);
+			currentVersion = 529825E32A51E19F0079F29C /* SteamStore.xcdatamodel */;
+			path = SteamStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C98593C22A4B685100B057D5 /* Project object */;
 }
