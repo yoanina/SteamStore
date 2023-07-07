@@ -14,6 +14,6 @@ struct Juego:Decodable{
     let imagenURL:String
     let imagenID:String
     let categorias:String
-    let developer:String
-    let publisher:String
+    let almacenamiento:String
+    let desarrolladora:String
 }
