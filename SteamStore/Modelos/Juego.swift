@@ -6,14 +6,14 @@
 //
 
 import Foundation
-struct Juego:Decodable{
-    let id:Int
-    let nombre:String
-    let descripcion:String
-    let precio:Double
-    let imagenURL:String
-    let imagenID:String
-    let categorias:String
-    let almacenamiento:String
-    let desarrolladora:String
+class Juego{
+    var id = ""
+    var nombre = ""
+    var descripcion = ""
+    var precio = ""
+    var imagenURL = ""
+    var imagenID = ""
+    var categorias = ""
+    var almacenamiento = ""
+    var desarrolladora = ""
 }
